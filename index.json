@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "courses": [
+    {
+      "id": "madside-tour",
+      "title": "The madside Tour",
+      "description": "Learn madside itself: assemble & run, the editor, the debugger, snapshots, the asset pipeline, and the project manifest — one Atari + MADS feature at a time.",
+      "machine": "atari-xl",
+      "ref": "madside-tour"
+    }
+  ]
+}
