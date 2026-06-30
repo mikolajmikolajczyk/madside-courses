@@ -1,0 +1,31 @@
+; Lesson 6 — Write your own converter
+; The recipe (project.json) runs `txt-to-msg` on assets/greeting.txt to make
+; generated/greeting.a65 (a `msg` table). That converter doesn't exist yet, so
+; the build is RED. Create converters/txt-to-msg.js (see the lesson) to fix it.
+
+SAVMSC = $58
+screen = $80
+
+        org $2000
+
+start
+        lda SAVMSC
+        sta screen
+        lda SAVMSC+1
+        sta screen+1
+
+        ldy #0
+print
+        lda msg,y          ; `msg` comes from the generated file (below)
+        cmp #$ff
+        beq done
+        sta (screen),y
+        iny
+        jmp print
+
+done
+        jmp done
+
+        run start
+
+        icl 'generated/greeting.a65'

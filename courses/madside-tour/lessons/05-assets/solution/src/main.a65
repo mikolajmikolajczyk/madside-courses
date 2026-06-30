@@ -1,0 +1,16 @@
+; Lesson 5 — The asset pipeline (reference solution)
+
+COLOR4 = $02C8
+
+        org $2000
+
+start
+        lda colors          ; first byte of the generated table
+        sta COLOR4          ; set the background colour
+
+done
+        jmp done
+
+        run start
+
+        icl 'generated/colors.a65'

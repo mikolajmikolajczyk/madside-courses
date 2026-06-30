@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "madside-tour-06",
+  "main": "src/main.a65",
+  "machine": "atari-xl",
+  "toolchain": "mads",
+  "run": { "default": { "audio": false } },
+  "recipes": [
+    {
+      "input": "assets/greeting.txt",
+      "output": "generated/greeting.a65",
+      "converter": "txt-to-msg",
+      "options": { "label": "msg" }
+    }
+  ]
+}

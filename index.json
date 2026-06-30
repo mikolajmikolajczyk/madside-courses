@@ -6,14 +6,14 @@
       "title": "The madside Tour",
       "description": "Learn madside itself: assemble & run, the editor, the debugger, snapshots, the asset pipeline, and the project manifest — one Atari + MADS feature at a time.",
       "machine": "atari-xl",
-      "ref": "madside-tour"
+      "slug": "madside-tour"
     },
     {
       "id": "atari-basics",
       "title": "Atari Assembly Basics",
       "description": "Write your first 6502 programs for the Atari 8-bit: screen memory, loops, and colour. Three short lessons, each with a task you assemble and run.",
       "machine": "atari-xl",
-      "ref": "atari-basics"
+      "slug": "atari-basics"
     }
   ]
 }

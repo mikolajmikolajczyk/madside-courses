@@ -1,0 +1,31 @@
+; Lesson 1 — Assemble & Run
+; The build is RED: the `msg` data line below is commented out, so `lda msg,y`
+; can't find it. Uncomment the marked line to turn the build green, then run.
+
+SAVMSC = $58            ; OS pointer to the top-left of the text screen
+screen = $80           ; our zero-page copy of it
+
+        org $2000
+
+start
+        lda SAVMSC
+        sta screen
+        lda SAVMSC+1
+        sta screen+1
+
+        ldy #0
+print
+        lda msg,y          ; needs the `msg` label below
+        cmp #$ff
+        beq done
+        sta (screen),y
+        iny
+        jmp print
+
+done
+        jmp done           ; spin so the screen stays up
+
+        run start
+
+; TODO: uncomment the next line (remove the leading "; ") to define the message.
+; msg     dta d'HELLO MADSIDE!', $ff

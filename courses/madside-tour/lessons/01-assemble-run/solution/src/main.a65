@@ -1,0 +1,29 @@
+; Lesson 1 — Assemble & Run (reference solution)
+; The `msg` line is uncommented — the build is green.
+
+SAVMSC = $58
+screen = $80
+
+        org $2000
+
+start
+        lda SAVMSC
+        sta screen
+        lda SAVMSC+1
+        sta screen+1
+
+        ldy #0
+print
+        lda msg,y
+        cmp #$ff
+        beq done
+        sta (screen),y
+        iny
+        jmp print
+
+done
+        jmp done
+
+        run start
+
+msg     dta d'HELLO MADSIDE!', $ff

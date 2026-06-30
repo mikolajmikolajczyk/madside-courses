@@ -1,0 +1,20 @@
+; Lesson 5 — The asset pipeline
+; The recipe in project.json builds generated/colors.a65 (a `colors` table) on
+; every build. This source doesn't use it yet — uncomment the two TODO blocks.
+
+COLOR4 = $02C8          ; background colour register (OS shadow)
+
+        org $2000
+
+start
+        ; TODO (2): uncomment these two lines to use the first generated colour.
+        ; lda colors
+        ; sta COLOR4
+
+done
+        jmp done
+
+        run start
+
+; TODO (1): uncomment to include the generated table so `colors` is defined.
+; icl 'generated/colors.a65'

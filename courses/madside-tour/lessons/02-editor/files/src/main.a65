@@ -1,0 +1,43 @@
+; Lesson 2 — The editor
+; Everything here builds. Hover `clrscr` (on the jsr line) to see its doc
+; comment; use go-to-definition; add your own `;` doc line above `clrscr`.
+
+SAVMSC = $58
+screen = $80
+
+        org $2000
+
+start
+        lda SAVMSC
+        sta screen
+        lda SAVMSC+1
+        sta screen+1
+
+        jsr clrscr          ; hover `clrscr` here — see its doc comment
+
+        ldy #0
+print
+        lda msg,y
+        cmp #$ff
+        beq done
+        sta (screen),y
+        iny
+        jmp print
+
+done
+        jmp done
+
+; clrscr — fill one page of the text screen with blanks ($00 = space).
+;          Call after `screen` is set up. Clobbers A and Y.
+clrscr
+        lda #0
+        ldy #0
+clrlp
+        sta (screen),y
+        iny
+        bne clrlp
+        rts
+
+        run start
+
+msg     dta d'HELLO MADSIDE!', $ff

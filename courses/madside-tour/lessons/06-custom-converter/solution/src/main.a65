@@ -1,0 +1,28 @@
+; Lesson 6 — reference solution (src is unchanged; the fix is the converter).
+
+SAVMSC = $58
+screen = $80
+
+        org $2000
+
+start
+        lda SAVMSC
+        sta screen
+        lda SAVMSC+1
+        sta screen+1
+
+        ldy #0
+print
+        lda msg,y
+        cmp #$ff
+        beq done
+        sta (screen),y
+        iny
+        jmp print
+
+done
+        jmp done
+
+        run start
+
+        icl 'generated/greeting.a65'

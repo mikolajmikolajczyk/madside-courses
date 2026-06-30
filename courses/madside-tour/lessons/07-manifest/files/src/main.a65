@@ -1,0 +1,18 @@
+; Lesson 6 — The project manifest
+; This reads BGCOL, which the source never defines — so it WON'T build until
+; you define BGCOL in project.json's build args (see the lesson text).
+;
+;   "build": { "args": ["-d:BGCOL=$84"] }
+
+COLOR4 = $02C8          ; background colour register (OS shadow)
+
+        org $2000
+
+start
+        lda #BGCOL          ; BGCOL is supplied by the manifest, not the source
+        sta COLOR4
+
+done
+        jmp done
+
+        run start

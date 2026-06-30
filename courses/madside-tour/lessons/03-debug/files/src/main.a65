@@ -1,0 +1,16 @@
+; Lesson 3 — The debugger
+; This builds and runs as-is. Don't change it — use the debugger to watch it:
+; breakpoint (F9) on `sta TARGET`, Run, check A in Registers, step, watch $0600.
+
+TARGET = $0600
+
+        org $2000
+
+start
+        lda #$42            ; A = $42
+        sta TARGET          ; store it at $0600  (put a breakpoint here)
+
+done
+        jmp done            ; spin so the value stays put
+
+        run start

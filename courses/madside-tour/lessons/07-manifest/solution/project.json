@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "madside-tour-07",
+  "main": "src/main.a65",
+  "machine": "atari-xl",
+  "toolchain": "mads",
+  "run": { "default": { "audio": false } },
+  "build": { "args": ["-d:BGCOL=$84"] }
+}

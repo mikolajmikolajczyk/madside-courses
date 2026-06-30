@@ -1,0 +1,6 @@
+{
+  "title": "The madside Tour",
+  "description": "Learn madside itself, one feature at a time: assemble & run, the editor, the debugger, snapshots, the asset pipeline, and the project manifest — all on the Atari 8-bit with the MADS assembler. Each lesson has a small task you build and Check.",
+  "machine": "atari-xl",
+  "order": 1
+}

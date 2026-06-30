@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "madside-tour-05",
+  "main": "src/main.a65",
+  "machine": "atari-xl",
+  "toolchain": "mads",
+  "run": { "default": { "audio": false } },
+  "recipes": [
+    {
+      "input": "assets/colors.csv",
+      "output": "generated/colors.a65",
+      "converter": "csv-to-data",
+      "options": { "label": "colors" }
+    }
+  ]
+}
