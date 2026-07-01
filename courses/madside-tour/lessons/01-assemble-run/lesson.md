@@ -7,7 +7,7 @@ madside.
 ## madside builds as you type
 
 There's no "compile" button. Every edit re-runs the MADS assembler in the
-background and updates the **Output** panel (above the editor). Green = it built;
+background and updates the **Output** panel (below the editor). Green = it built;
 **red shows the error and the line it's on**.
 
 Open `src/main.a65`. Right now the Output panel is **red**: one line is commented

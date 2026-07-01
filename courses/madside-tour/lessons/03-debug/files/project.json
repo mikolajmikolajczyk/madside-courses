@@ -4,5 +4,12 @@
   "main": "src/main.a65",
   "machine": "atari-xl",
   "toolchain": "mads",
-  "run": { "default": { "audio": false } }
+  "run": {
+    "default": {
+      "audio": false
+    }
+  },
+  "build": {
+    "trigger": "auto"
+  }
 }

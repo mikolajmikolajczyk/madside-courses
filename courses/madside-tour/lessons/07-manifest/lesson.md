@@ -44,4 +44,9 @@ Output goes green; run with **Ctrl+Enter** and the background is colour `$84`.
 Change the value, rebuild, watch it follow. Press **Check** — it confirms the
 build, which only succeeds once the manifest defines `BGCOL`.
 
+This tour stayed on the **Atari 8-bit with MADS** to keep one thing in focus, but
+the same workflow targets the **NES, Commodore 64, ZX Spectrum, and Sega Genesis**
+too — you pick the hardware by setting `machine` + `toolchain` in the manifest (or
+when you create a project). Other courses go deep on those.
+
 That's the tour. You've driven every core part of madside — go build something.

@@ -8,7 +8,7 @@ happen.
 
 - **F9** toggles a **breakpoint** on the cursor's line (a red dot in the gutter).
   Run with **Ctrl+Enter** and execution halts *before* that instruction.
-- **F10** — step one instruction. **F11** — step one frame.
+- **F10** — step over (run one source line). **Shift+F10** — one instruction. **F11** — one frame.
 
 ## Registers and memory
 
