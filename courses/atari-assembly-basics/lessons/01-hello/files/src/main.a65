@@ -1,0 +1,14 @@
+; Lesson 1 — Hello, Atari
+; Finish the print loop below (look for TODO).
+
+SAVMSC = $58
+screen = $80
+
+        org $2000
+
+start
+
+done
+        jmp done
+        run start
+

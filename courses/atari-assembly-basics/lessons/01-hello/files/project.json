@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "Atari Assembly Basics — Hello, Atari",
+  "main": "src/main.a65",
+  "machine": "atari-xl",
+  "toolchain": "mads",
+  "run": {
+    "default": {
+      "audio": false
+    }
+  },
+  "course": {
+    "id": "gh:mikolajmikolajczyk/madside-courses#atari-basics",
+    "lesson": "01-hello"
+  }
+}

@@ -1,0 +1,10 @@
+    org $2000
+
+start
+    ; drop the code here
+    ; ctrl + enter to build and run
+    ; ctrl + shift + enter to rebuild and run
+done
+    jmp done
+
+    run start

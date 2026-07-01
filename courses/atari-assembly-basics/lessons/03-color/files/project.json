@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "Atari Assembly Basics — Changing the Background Colour",
+  "main": "src/main.a65",
+  "machine": "atari-xl",
+  "toolchain": "mads",
+  "run": {
+    "default": {
+      "audio": false
+    }
+  },
+  "course": {
+    "id": "gh:mikolajmikolajczyk/madside-courses#atari-basics",
+    "lesson": "03-color"
+  }
+}

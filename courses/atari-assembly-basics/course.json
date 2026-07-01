@@ -1,0 +1,16 @@
+{
+  "title": "Atari Assembly Basics",
+  "description": "Write your first 6502 programs for the Atari 8-bit.",
+  "machine": "atari-xl",
+  "order": 1,
+  "chapters": [
+    {
+      "title": "How processor thinks",
+      "lessons": [
+        "01-hello",
+        "02-loops",
+        "03-color"
+      ]
+    }
+  ]
+}

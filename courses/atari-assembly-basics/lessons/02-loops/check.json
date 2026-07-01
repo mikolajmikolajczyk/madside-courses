@@ -1,0 +1,12 @@
+{
+  "checks": [
+    {
+      "kind": "build"
+    },
+    {
+      "kind": "memory",
+      "addr": "$02C8",
+      "equals": "$94"
+    }
+  ]
+}
