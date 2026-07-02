@@ -1,0 +1,9 @@
+    org $2000
+start
+    ldx #8 ; X = 8
+loop
+    dex ; X = X - 1 ; sets Z flag when zero
+    bne loop ; if Z flag not active go to loop label
+end
+    jmp end
+    run start

@@ -2,6 +2,11 @@
   "checks": [
     {
       "kind": "build"
+    },
+    {
+      "kind": "label",
+      "name": "hue",
+      "addr": "$CB"
     }
   ]
 }

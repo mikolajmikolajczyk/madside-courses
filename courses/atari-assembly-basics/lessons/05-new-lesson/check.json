@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "kind": "build"
+    },
+    {
+      "kind": "memory",
+      "addr": "$3000",
+      "equals": "$AA"
+    },
+    {
+      "kind": "memory",
+      "addr": "$3001",
+      "equals": "$AA"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Memory: your own shelves
 
-Lesson 01 used a wired shelf. Most shelves aren't wired to anything, though. They're plain storage, and they're yours. This lesson writes a value to one, then reads it back later.
+Lesson 02 used a wired shelf. Most shelves aren't wired to anything, though. They're plain storage, and they're yours. This lesson writes a value to one, then reads it back later.
 
 ## A variable is a shelf
 
@@ -29,6 +29,8 @@ score   = $CB             ; "score" now means shelf $CB
 ```
 
 That's a **label**. You'll see labels name a line too, so the worker knows where to jump. Same mechanism either way: a name the assembler swaps back to a number.
+
+A quick word on layout, because it isn't just for looks. The assembler here is MADS, and it tells labels from instructions by **which column they start in**. A label goes hard against the left edge, in column 1: `score`, `start`, `loop`. Everything else, the instructions and directives, is indented. That's why every listing in this course looks the way it does. If you accidentally indent a label (without a trailing colon), MADS thinks it's a macro call and throws an error. Left edge for names, indented for instructions, and you're fine.
 
 ## Zero page
 

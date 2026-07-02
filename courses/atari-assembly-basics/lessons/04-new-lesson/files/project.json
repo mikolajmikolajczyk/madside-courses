@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "name": "Atari Assembly Basics — The A register",
+  "name": "Atari Assembly Basics — New lesson",
   "main": "src/main.a65",
   "machine": "atari-xl",
   "toolchain": "mads",
   "run": {
     "default": {
-      "audio": false
+      "audio": true
     }
   },
   "course": {
     "id": "gh:mikolajmikolajczyk/madside-courses#atari-assembly-basics",
-    "lesson": "02-loops"
+    "lesson": "04-new-lesson"
   }
 }

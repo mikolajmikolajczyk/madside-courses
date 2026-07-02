@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "Atari Assembly Basics — Changing the Background Colour",
+  "name": "Atari Assembly Basics — Memory: your own shelves",
   "main": "src/main.a65",
   "machine": "atari-xl",
   "toolchain": "mads",
@@ -10,7 +10,7 @@
     }
   },
   "course": {
-    "id": "gh:mikolajmikolajczyk/madside-courses#atari-basics",
+    "id": "gh:mikolajmikolajczyk/madside-courses#atari-assembly-basics",
     "lesson": "03-color"
   }
 }

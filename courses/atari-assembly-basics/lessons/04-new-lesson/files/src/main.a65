@@ -1,0 +1,9 @@
+; variables here
+    org $2000
+
+start
+    lda #$36
+    sta $02C8
+done
+    jmp done
+    run start

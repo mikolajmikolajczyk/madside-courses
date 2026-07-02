@@ -9,7 +9,9 @@
       "lessons": [
         "01-hello",
         "02-loops",
-        "03-color"
+        "03-color",
+        "04-new-lesson",
+        "05-new-lesson"
       ]
     }
   ]
